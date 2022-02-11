@@ -1,4 +1,4 @@
-
+import java.util.Locale;
 
 /**
  * Represents an individual copy of a book
@@ -123,21 +123,20 @@ public class Book {
 
     public void setAuthor(String author) {
 
-
         if (author.isEmpty()) {
-            this.author = "Unknown";
             unknownAuthors++;
+            this.author = "Unknown";
+            return;
 
         } else {
+            String ressult = "";
+
             for (String each : author.split(" ")) {
 
-                this.author += capitalize(each) + " ";
-
+                ressult += capitalize(each) + " ";
             }
+            this.author = ressult.trim();
         }
-
-        this.author = author.trim();
-
 
     }
 
@@ -160,26 +159,24 @@ public class Book {
      *              book.setTitle("the Chronicles OF TrumP"); => "The Chronicles of Trump" is assigned to this.title
      */
     public void setTitle(String title) {
+
         if (title.isEmpty()) {
             this.title = "";
+            return;
         } else {
-            String[] arr = title.split(" ");
-            if (arr.length == 1) {
-                this.title = capitalize(title);
-            } else {
-                for (String each : arr) {
-                    if (isTitleWord(each)) {
-                        each.toLowerCase();
-                    } else {
-                        capitalize(each);
-                    }
 
-                    this.title += each + " ";
+            String ressult1 = "";
 
-                }
+            for (String each : title.split(" ")) {
+
+                ressult1 += capitalize(each) + " ";
+
             }
+
+            this.title = ressult1.trim();
+            return;
         }
-        this.title = title.trim();
+
 
     }
 
@@ -193,7 +190,7 @@ public class Book {
     public String toString() {
 
 
-        return "[author="+author+", title="+title+", id="+id+", page="+pages+"]";
+        return "[author=" + author + ", title=" + title + ", id=" + id + ", page=" + pages + "]";
 
     }
 
@@ -227,7 +224,7 @@ public class Book {
      */
     public void setPages(int pages) {
 
-        this.pages= pages;
+        this.pages = pages;
 
 
     }
@@ -265,7 +262,7 @@ public class Book {
      */
     public void setId(int id) {
 
-        this.id= id;
+        this.id = id;
 
 
     }
