@@ -177,10 +177,22 @@ public class Shelf {
      * @param author
      * @return List<Book> that belongs to that Author
      */
-    public static List<Book> getAllBooksForAuthor(String author) {
+
+    //this method was not completed in the original Shelf class
+    public static ArrayList<Book> getAllBooksForAuthor(String author) {
+
+        ArrayList<Book> result = new ArrayList<>();
+
+        for (Book eachBook : getTheBooks()) {
+            if(eachBook.getAuthor().equals(author)){
+                result.add(eachBook);
+            }
+        }
+        return result;
 
 
-        return null;
+
+
     }
 
     /**
