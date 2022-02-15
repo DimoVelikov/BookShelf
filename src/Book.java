@@ -123,20 +123,13 @@ public class Book {
 
     public void setAuthor(String author) {
 
-
-        if (author.isEmpty()) {
-            this.author = "Unknown";
+        if(author.isEmpty()){
+            author="Unknown";
             unknownAuthors++;
-
-        } else {
-            for (String each : author.split(" ")) {
-
-                this.author += capitalize(each) + " ";
-
-            }
+        }else{
+            author= capitalize(author);
         }
-
-        this.author = author.trim();
+        this.author=author;
 
 
     }
