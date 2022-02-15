@@ -45,7 +45,6 @@ public class Book {
      * "and", "but", "for", "nor", "or", "so", "yet"
      * Most common single-word English prepositions:
      * "at", "by", "in", "into", "near", "of", "on", "to", "than", "via"
-     * <p>
      * isTitleWord("Apple") => true
      * isTitleWord("a") => false
      * isTitleWord("BUT") => false
@@ -55,7 +54,7 @@ public class Book {
      */
     public static Boolean isTitleWord(String word) {
 
-        if (word.equalsIgnoreCase("a") ||
+            if (word.equalsIgnoreCase("a") ||
                 word.equalsIgnoreCase("an") ||
                 word.equalsIgnoreCase("the") ||
                 word.equalsIgnoreCase("and") ||
@@ -74,7 +73,7 @@ public class Book {
                 word.equalsIgnoreCase("on") ||
                 word.equalsIgnoreCase("to") ||
                 word.equalsIgnoreCase("than") ||
-                word.equalsIgnoreCase("via")) {
+                word.equalsIgnoreCase("via")){
             return false;
         } else {
             return true;
