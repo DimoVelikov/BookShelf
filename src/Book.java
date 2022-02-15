@@ -123,7 +123,6 @@ public class Book {
 
     public void setAuthor(String author) {
 
-
         if (author.isEmpty()) {
             this.author = "Unknown";
             unknownAuthors++;
