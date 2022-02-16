@@ -1,5 +1,9 @@
 
-
+// conflict is created by Elena
+// what is ad hoc testing?
+// what is stress testing
+// what is spike testing?
+// what is volume testing?
 /**
  * Represents an individual copy of a book
  */
