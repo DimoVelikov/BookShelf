@@ -9,7 +9,7 @@
  */
 
 // conflict pease, here
-    // Ali
+    // Ali -- why?
 
 public class Book {
     //instance variables for Book object
