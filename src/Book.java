@@ -8,10 +8,7 @@
  * Represents an individual copy of a book
  */
 
-// conflict pease, here
-    // Ali
-
-    // what happen
+    // Ali -- why?fffffff
 
 public class Book {
     //instance variables for Book object
@@ -65,7 +62,8 @@ public class Book {
     public static Boolean isTitleWord(String word) {
 
         boolean result=true;
-        String[] nonTitle={"a" , "What is ASCII code?", "an", "the","and", "but", "for", "nor", "or", "so", "yet","at", "by", "in", "into", "near", "of", "on", "to", "than", "via"};
+
+        String[] nonTitle={"a" , "hi", "hello", "how are you?", "an", "the","and", "but", "for", "nor", "or", "so", "yet","at", "by", "in", "into", "near", "of", "on", "to", "than", "via"};
 
         for (String each : nonTitle) {
             if(word.equals(each)){
