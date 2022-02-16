@@ -4,6 +4,9 @@
  * Represents an individual copy of a book
  */
 
+// conflict pease, here
+    // Ali
+
 public class Book {
     //instance variables for Book object
     private String author;
