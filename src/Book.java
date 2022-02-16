@@ -8,7 +8,7 @@
  * Represents an individual copy of a book
  */
 
-    // Ali -- why?fffffff
+    // Ali -- why? why?
 
 public class Book {
     //instance variables for Book object
