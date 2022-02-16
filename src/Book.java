@@ -7,6 +7,8 @@
 // conflict pease, here
     // Ali
 
+    // what happen
+
 public class Book {
     //instance variables for Book object
     private String author;
