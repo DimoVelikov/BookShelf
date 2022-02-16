@@ -11,9 +11,6 @@
 // conflict pease, here
     // Ali
 
-    // what happen --- added
-    //conflict 001
-
 public class Book {
     //instance variables for Book object
     private String author;
