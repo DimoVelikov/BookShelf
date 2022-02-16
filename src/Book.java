@@ -62,6 +62,7 @@ public class Book {
     public static Boolean isTitleWord(String word) {
 
         boolean result=true;
+
         String[] nonTitle={"a" , "hi", "hello", "how are you?", "an", "the","and", "but", "for", "nor", "or", "so", "yet","at", "by", "in", "into", "near", "of", "on", "to", "than", "via"};
 
         for (String each : nonTitle) {
